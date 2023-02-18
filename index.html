@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <title>Gerador de senhas</title>
+</head>
+<body>
+    <main>
+        <section class="principal">
+            <h1 class="titulo">Gerador de Senhas</h1>
+            <p class="subtitulo">Criador de senha online, para que você nunca mais sofra com o mal da senha fraca</p>
+        </section>
+        <section class="caixa">
+            <div class="senha">
+                <div class="texto">
+                    <input type="text" name="senha" id="senha">
+                </div>
+                <div class="acoes">
+                    <button id="copiarSenha">
+                        <ion-icon name="copy-outline"></ion-icon>
+                    </button>
+                    <button id="gerarNovaSenha">
+                        <ion-icon name="refresh-circle-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="seguranca">
+                <div id="indicador-seguranca" class="bar fraca"></div>
+            </div>
+        </section>
+        <section class="customizar-caixa">
+            <h3 class="titulo">Opções de senha</h3>
+                <div class="acoes">
+                    <div class="senha-tamanho">
+                        <p>tamanho: <span id="tamanho-texto-senha">16</span></p>
+                        <input type="range" class="slide" name="tamanho-senha" id="tamanho-senha" value="16" min="4" max="64">
+                    </div>
+                    <div class="configurar">
+                        <label class="caixa-selecao">
+                            <span class="text">Maiúsculas</span>
+                            <input type="checkbox" id="maiuscula" checked>
+                            <span class="marcar"></span>
+                        </label>
+                        <label class="caixa-selecao">
+                            <span class="text">Números</span>
+                            <input type="checkbox" id="numeros" checked>
+                            <span class="marcar"></span>
+                        </label>
+                        <label class="caixa-selecao">
+                            <span class="text">Símbolos</span>
+                            <input type="checkbox" id="simbolos" checked>
+                            <span class="marcar"></span>
+                        </label>
+                    </div>
+                </div>
+         </section>
+            <div class="botao-copiar">
+                <button id="copiar">Copiar senha</button>
+            </div>
+    </main>
+</body>
+<script src="assets/js/geradorDeSenha.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

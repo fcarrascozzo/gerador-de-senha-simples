@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    background-color: #ffffff;
+    font-family: 'Gochi Hand', sans-serif;
+    color: #0b6170;
+    padding: 2rem;
+}
+
+main {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.principal {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.principal .titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.principal .subtitulo {
+    font-size: 1.125rem;
+    color: #0b6170;
+}
+
+.caixa {
+    background: #25dfc6;
+    box-shadow: 0 1px 2px rgba(132, 148, 165 .08);
+    border-radius: 8px;
+    margin-bottom: 3rem;
+}
+
+.senha {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.senha .texto {
+    flex: 1;
+}
+.senha .texto input {
+    font-family: "roboto", serif;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    cursor: default;
+    height: 52px;
+    width: 100%;
+    transition: all 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #25dfc6;
+}
+
+.senha .texto input.font-p{
+    font-size: 2rem;
+}
+
+
+.senha .texto input.font-pp{
+    font-size: 1.5rem;
+}
+
+
+.senha .texto input.font-ppp{
+    font-size: 1rem;
+}
+
+.senha .acoes button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.seguranca {
+    height: 10px;
+    background-color: #ddd;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.seguranca .bar {
+    height: 10px;
+    background-color: #ddd;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: all 0.2s;
+}
+
+.seguranca .bar.completo {
+    border-top-right-radius: 0;
+}
+
+.seguranca .bar.fraca {
+    background-color: #eb5757;
+}
+
+.seguranca .bar.precisaAtencao {
+    background-color: #f2c94c;
+}
+
+.seguranca .bar.seguro {
+    background-color: #27ae60;
+}
+
+.customizar-caixa .titulo {
+    border-bottom: 1px solid #0b6170;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+}
+
+.customizar-caixa .acoes {
+    display: flex;
+    gap: 3rem;
+    color: #0b6170;
+}
+
+.customizar-caixa .senha-tamanho {
+    flex: 1;
+}
+
+.customizar-caixa .senha-tamanho .slide {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 10px;
+    background: #dddddd;
+    outline: none;
+    border-radius: 8px;
+    width: 100%;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    margin-top: 1rem;
+}
+
+.customizar-caixa .senha-tamanho .slide:hover {
+    opacity: 1;
+}
+
+.customizar-caixa .senha-tamanho .slide::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 11px;
+    border-radius: 25px;
+    background: #25dfc6;
+    cursor: pointer;
+}
+
+.customizar-caixa .senha-tamanho .slide::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    background: #25dfc6;
+    cursor: pointer;
+}
+
+.caixa-selecao {
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.caixa-selecao input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.caixa-selecao .marcar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #dddddd;
+    transition: all 0.2s;
+}
+
+.caixa-selecao:hover input ~ .marcar {
+    background-color: #cccccc;
+}
+
+.caixa-selecao input:checked ~ .marcar {
+    background-color: #159494;
+}
+
+.caixa-selecao .marcar:after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.caixa-selecao input:checked ~ .marcar:after {
+    display: block;
+}
+
+.botao-copiar {
+    text-align: center;
+}
+
+.botao-copiar button {
+    background-color: #159494;
+    font-size: 1.375rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    transition: all 0.2s;
+}
+
+.botao-copiar button:hover {
+    background-color: #159494;
+}
+
+.senha .acoes button {
+    font-size: 40px;
+    display: block;
+}
+
+@media only screen and(max-width: 480px){
+    .senha {
+        padding: 1rem;
+    }
+    .senha .texto input{
+        font-size: 1.5rem;
+    }
+    .senha .texto input.font-p{
+        font-size: 1.2rem;
+    }
+    .senha .texto input.font-pp{
+        font-size: 1rem;
+    }
+    .senha .texto input.font-ppp{
+        font-size: 1rem;
+    }
+}
